@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'pg'              # Might fail because of version number -- Proper = 0.17.1
 
 
 
@@ -20,6 +21,5 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg'              # Might fail because of version number -- Proper = 0.17.1
   gem 'rails_12factor', '0.0.2'
 end
